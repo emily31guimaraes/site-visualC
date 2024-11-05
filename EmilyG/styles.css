@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #f0f0f0;
+    background: #0d0d0d;
+    font-family: "Chakra Petch", sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #ff6347;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: 3px solid #ff6347;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.chamada {
+    background: linear-gradient(135deg, #1a1a1a 0%, #333399 100%);
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.chamada h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.chamada p {
+    font-size: 1.2rem;
+    color: #ff6347;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    border: 3px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.categoria {
+    padding: 40px 20px;
+}
+
+.categoria h2 {
+    color: #ff6347;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ff6347;
+    display: inline-block;
+}
+
+.categoria-videos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+.categoria-videos a {
+    flex: 0 0 auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.categoria-videos img {
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+    opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.categoria-videos img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    border: 3px solid #ff6347;
+}
